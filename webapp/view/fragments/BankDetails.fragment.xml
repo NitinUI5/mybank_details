@@ -2,20 +2,20 @@
     xmlns="sap.m">
 
     <VBox id="vBox1" class="sapUiSmallMargin">
-        <Title text="Account Details" id="bankAccTitle" level="H1"/>
+        <Title text="{i18n>accDetails}" id="bankAccTitle" level="H1"/>
 
         <HBox id="hBox1">
-            <Label text="Bank Account Number:" id="lblacnum" class="sapUiSmallMarginEnd"/>
+            <Label text="{i18n>accNum}" id="lblacnum" class="sapUiSmallMarginEnd"/>
             <Text text="12345*********" id="accountNum"/>
         </HBox>
 
         <HBox id="hBox2">
-            <Label text="Account Holder Name:" id="lblAcHolderNameId" class="sapUiSmallMarginEnd"/>
+            <Label text="{i18n>accHNum}" id="lblAcHolderNameId" class="sapUiSmallMarginEnd"/>
             <Text text="Nitin Meena" id="idAcHolderNamevalue"/>
         </HBox>
 
         <HBox id="hBox3">
-            <Label text="IFS Code:" id="lblIFSCId" class="sapUiSmallMarginEnd"/>
+            <Label text="{i18n>iFSCId}" id="lblIFSCId" class="sapUiSmallMarginEnd"/>
             <Text text="000000000********" id="idIFSCValue"/>
         </HBox>
     </VBox>

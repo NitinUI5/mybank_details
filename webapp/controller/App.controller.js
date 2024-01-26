@@ -10,6 +10,14 @@ sap.ui.define([
         return Controller.extend("com.nm100.mybankdetails.controller.App", {
             onInit: function () {
 
+                // debugger;
+                if (navigator.language == "es") {
+                    var i18nModel = this.getOwnerComponent().getModel("i18n_es");
+                    this.getOwnerComponent().setModel(i18nModel, "i18n")
+                } else {
+                    var i18nModel = this.getOwnerComponent().getModel("i18n");
+                    this.getOwnerComponent().setModel(i18nModel, "i18n")
+                }
             },
 
             onOpenBankDetails: function () {
